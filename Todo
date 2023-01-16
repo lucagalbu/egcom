@@ -1,0 +1,2 @@
+- Move css classes to asset, so no need to manually add them in WP admin board.
+- Readme should become a md, not txt.
