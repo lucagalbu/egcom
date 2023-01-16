@@ -85,33 +85,30 @@ class Elementor_Blog_List extends \Elementor\Widget_Base {
 
 		if ($allPostsQuery -> have_posts()){
 			?>
-			<div class = "container">
-					<div class = "row">
-			<?php
-			while ( $allPostsQuery -> have_posts() ) {
-				$allPostsQuery -> the_post();
-				?>
-					<div class = "col-sm-4">
-						<div class = "card mb-4 d-flex flex-column align-items-center">
-						<div class="blog_thumbnail">
-							<a href=<?= get_post_permalink();?> target="_self">
-								<img src=<?= the_post_thumbnail_url();?>></img>
-							</a>
-						</div>
-						<p class="text-center mb-0"> <?=get_the_title();?> </p>
-						<p class="text-center fw-light fst-italic"> <?=get_the_category()[0]->name;?></p>
-						</div>
-					</div>
-				<?php
-			}
-			?>
+			<div class = "container-fluid">
+				<div class = "grid">
+					<!-- The following two containers are required by masonry to set a relative size for the articles -->
+					<div class="grid-sizer"></div>
+					<div class="gutter-sizer"></div>
+					<?php while ( $allPostsQuery -> have_posts() ) { ?>
+						<?php $allPostsQuery -> the_post();?>
+							<div class = "grid-item">
+								<div class = "card mb-4 d-flex flex-column align-items-center">
+								<div class="blog_thumbnail">
+									<a href=<?= get_post_permalink();?> target="_self">
+										<img src=<?= the_post_thumbnail_url();?>></img>
+									</a>
+								</div>
+								<p class="text-center mb-0"> <?=get_the_title();?> </p>
+								<p class="text-center fw-light fst-italic"> <?=get_the_category()[0]->name;?></p>
+								</div>
+							</div>
+					<?php } ?>
 				</div>
 			</div>
-			<?php
-		}else{
-			?>
+		<?php }else{ ?>
 			<p>No posts :(!</p>
-			<?php
+		<?php 
 		}
 
 		wp_reset_query();

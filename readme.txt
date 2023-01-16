@@ -37,3 +37,36 @@ The following css classes are necessary:
 .blog_thumbnail>a>img:hover{
 	transform:scale(1.1);
 }
+
+.grid-sizer,
+.grid-item {
+  width: 22%;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.gutter-sizer { width: 4%; }
+
+
+Bootsrap is required. Place in header.php
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+For masonry add this to header<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript">
+	// layout Masonry after all images have loaded
+	$('.grid').imagesLoaded(function() {
+		$('.grid').masonry({
+		itemSelector: '.grid-item',
+		columnWidth: ".grid-sizer",
+		gutter: '.gutter-sizer',
+		percentPosition: true
+		});
+	});
+</script>
