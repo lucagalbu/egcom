@@ -1,7 +1,0 @@
-- Move css classes to asset, so no need to manually add them in WP admin board.
-- Readme should become a md, not txt.
-- What is an article script? Should I use it?
-- Error in console function loadImages not defined
-- Fix position of the script masonry from CDN. This must not be in the blog-list.php!
-- Update readme with cdn for masonry and load images
-- Sometimes masonry not computed correctly. This might be due to lazy loading of images. See here https://codepen.io/rydawg/pen/vLPqNp

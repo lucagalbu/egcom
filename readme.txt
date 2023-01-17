@@ -1,72 +1,39 @@
-To create the portfolioo type, add this to the theme
+=== egcom ===
 
-// Portfolio post type
-function create_portfoliotype() {
-    register_post_type( 'portfolio',
-        array(
-            'labels' => array(
-                'name' => __( 'Portfolio' ),
-                'singular_name' => __( 'Portfolio' )
-            ),
-			'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'portfolio'),
-            'show_in_rest' => true,
-			'taxonomies' => array( 'category' ),
-        )
-    );
-}
-// Hooking up our function to theme setup
-add_action( 'init', 'create_portfoliotype' );
+Contributors: automattic
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
+Requires at least: 4.5
+Tested up to: 5.4
+Requires PHP: 5.6
+Stable tag: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
 
+A starter theme called egcom.
 
-The following css classes are necessary:
+== Description ==
 
-.blog_thumbnail{
-	max-width: 533px;
-	overflow: hidden;
-}
+Theme for the website of the communication agency EGCOM.it
 
-.blog_thumbnail>a>img{
-	transform: scale(1);
-	transition: transform .3s ease-in-out;
-}
+== Installation ==
 
-.blog_thumbnail>a>img:hover{
-	transform:scale(1.1);
-}
+1. In your admin panel, go to Appearance > Themes and click the Add New button.
+2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
+3. Click Activate to use your new theme right away.
 
-.grid-sizer,
-.grid-item {
-  width: 22%;
-}
+== Frequently Asked Questions ==
 
-/* clearfix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
+= Does this theme support any plugins? =
 
-.gutter-sizer { width: 4%; }
+egcom includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
+== Changelog ==
 
-Bootsrap is required. Place in header.php
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+= 1.0 - May 12 2015 =
+* Initial release
 
-For masonry add this to header<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-<script type="text/javascript">
-	// layout Masonry after all images have loaded
-	$('.grid').imagesLoaded(function() {
-		$('.grid').masonry({
-		itemSelector: '.grid-item',
-		columnWidth: ".grid-sizer",
-		gutter: '.gutter-sizer',
-		percentPosition: true
-		});
-	});
-</script>
+== Credits ==
+
+* Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2018 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
