@@ -104,6 +104,17 @@ function egcom_setup()
 }
 add_action('after_setup_theme', 'egcom_setup');
 
+
+/**
+ * Add custom styles and scripts
+ */
+function add_scripts_and_styles()
+{
+	// Custom styles
+	wp_enqueue_style('custom_style', get_template_directory_uri() . '/custom_assets/css/custom_style.css');
+}
+add_action('wp_enqueue_scripts', 'add_scripts_and_styles');
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
