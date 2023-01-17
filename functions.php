@@ -112,6 +112,9 @@ function add_scripts_and_styles()
 {
 	// Custom styles
 	wp_enqueue_style('custom_style', get_template_directory_uri() . '/custom_assets/css/custom_style.css');
+
+	// Activate Masonry
+	wp_enqueue_script('activate-masonry', get_template_directory_uri() . '/custom_assets/js/masonry.js', array('jquery', 'masonry'), null);
 }
 add_action('wp_enqueue_scripts', 'add_scripts_and_styles');
 
