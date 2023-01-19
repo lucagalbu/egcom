@@ -218,3 +218,25 @@ function create_portfoliotype()
 	);
 }
 add_action('init', 'create_portfoliotype');
+
+/**
+ * Register the logo post type
+ */
+function create_logotype()
+{
+	register_post_type(
+		'logo',
+		array(
+			'labels' => array(
+				'name' => __('Logos'),
+				'singular_name' => __('Logo')
+			),
+			'description' => "Post containing only logos as feature image.",
+			'supports' => array('title', 'thumbnail'),
+			'public' => true,
+			'rewrite' => false,
+			'show_in_rest' => true
+		)
+	);
+}
+add_action('init', 'create_logotype');

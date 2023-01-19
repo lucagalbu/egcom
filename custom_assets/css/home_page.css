@@ -2,3 +2,51 @@
   border-radius: 22px;
   max-height: 500px;
 }
+
+/* Logo slides
+--------------------------------------------- */
+@keyframes slide {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
+.logo-slider-container {
+  overflow-x: hidden;
+}
+
+.logo-slider-row-1 {
+  display: inline-block;
+  width: max-content;
+  animation: slide 45s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+.logo-slider-row-2 {
+  display: inline-block;
+  width: max-content;
+  animation: slide 25s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+.logo-slider-row-3 {
+  display: inline-block;
+  width: max-content;
+  animation: slide 35s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+.logo-slider-img {
+  width: 100px;
+}
+
+.logo-slider-img-v2 {
+  width: 200px;
+}
+
+.logo-slider-img-v1 {
+  width: 200px;
+}
