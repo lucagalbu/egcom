@@ -66,7 +66,7 @@ function getLogoURLs(WP_Query $posts)
             <div class="<?= $title_col_class ?>">
                 <?php $description_class = $index % 2 ? 'float-start' : 'float-end'; ?>
                 <div class="<?= $description_class ?>">
-                    <h1><?= get_the_title($portfolio) ?></h1>
+                    <h3><?= get_the_title($portfolio) ?></h3>
                     <p><?= get_the_excerpt($portfolio) ?></p>
                     <a href=<?= get_post_permalink($portfolio) ?>>Continua a leggere</a>
                 </div>
