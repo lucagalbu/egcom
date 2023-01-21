@@ -112,6 +112,7 @@ function add_scripts_and_styles()
 {
 	// Custom styles
 	wp_enqueue_style('portfolio', get_template_directory_uri() . '/custom_assets/css/portfolio.css');
+	wp_enqueue_style('home_page', get_template_directory_uri() . '/custom_assets/css/home_page.css');
 
 	// Activate Masonry
 	wp_enqueue_script('activate-masonry', get_template_directory_uri() . '/custom_assets/js/masonry.js', array('jquery', 'masonry'), null);
