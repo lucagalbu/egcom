@@ -84,64 +84,6 @@ function getLogoURLs(WP_Query $posts)
     $logos = getLogoPosts();
     $logo_urls = getLogoURLs($logos);
     $urls_count = count($logo_urls);
-    $urls_first_row = array_slice($logo_urls, 0, floor($urls_count / 3) - 1);
-    $urls_second_row = array_slice($logo_urls, floor($urls_count / 3), floor($urls_count / 3) - 1);
-    $urls_third_row = array_slice($logo_urls, 2 * floor($urls_count / 3));
-
-    array_push($urls_first_row, ...$urls_first_row);
-    array_push($urls_second_row, ...$urls_second_row);
-    array_push($urls_third_row, ...$urls_third_row);
-
-    ?>
-    <div class="text-center text-decoration-underline">
-        <h1>Clienti</h1>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col logo-slider-container">
-            <div class="logo-slider-row-1">
-                <?php
-                foreach ($urls_first_row as $logo_url) {
-                ?>
-                    <img class="logo-slider-img-v1" src=<?= $logo_url; ?> alt=" Image"></img>
-                <?php } ?>
-            </div>
-            <div class="logo-slider-row-2">
-                <?php
-                foreach ($urls_second_row as $logo_url) {
-                ?>
-                    <img class="logo-slider-img-v1" src=<?= $logo_url; ?> alt=" Image"></img>
-                <?php } ?>
-            </div>
-            <div class="logo-slider-row-3">
-                <?php
-                foreach ($urls_third_row as $logo_url) {
-                ?>
-                    <img class="logo-slider-img-v1" src=<?= $logo_url; ?> alt=" Image"></img>
-                <?php } ?>
-            </div>
-        </div>
-    </div>
-
-    <!--- Extra logo versions --->
-
-    <?php
-    $logos = getLogoPosts();
-    $logo_urls = getLogoURLs($logos);
-
-    $urls_count = count($logo_urls);
-
-    shuffle($logo_urls);
-    $urls_first_half = $logo_urls;
-    shuffle($logo_urls);
-    $urls_second_half = $logo_urls;
-
-    array_push($urls_first_half, ...$urls_first_half);
-    array_push($urls_second_half, ...$urls_second_half);
-    ?>
-
-    <?php
-    $logo_urls = getLogoURLs($logos);
-    $urls_count = count($logo_urls);
     $urls_first_half = array_slice($logo_urls, 0, floor($urls_count / 2) - 1);
     $urls_second_half = array_slice($logo_urls, floor($urls_count / 2));
 
@@ -149,36 +91,6 @@ function getLogoURLs(WP_Query $posts)
     array_push($urls_second_half, ...$urls_second_half);
     ?>
 
-    <h1> Versione 1</h1>
-    <div class=" logo-slider-container">
-        <div class="logo-slider-row-1">
-            <?php
-            foreach ($urls_first_half as $logo_url) {
-            ?>
-                <img class="logo-slider-img" src=<?= $logo_url; ?> alt=" Image"></img>
-            <?php } ?>
-        </div>
-        <div class="logo-slider-row-2">
-            <?php
-            foreach ($urls_second_half as $logo_url) {
-            ?>
-                <img class="logo-slider-img" src=<?= $logo_url; ?> alt=" Image"></img>
-            <?php } ?>
-        </div>
-    </div>
-
-
-    <?php
-    $logo_urls = getLogoURLs($logos);
-    $urls_count = count($logo_urls);
-    $urls_first_half = array_slice($logo_urls, 0, floor($urls_count / 2) - 1);
-    $urls_second_half = array_slice($logo_urls, floor($urls_count / 2));
-
-    array_push($urls_first_half, ...$urls_first_half);
-    array_push($urls_second_half, ...$urls_second_half);
-    ?>
-
-    <h1> Versione 2</h1>
     <div class=" logo-slider-container">
         <div class="logo-slider-row-1">
             <?php
@@ -193,35 +105,6 @@ function getLogoURLs(WP_Query $posts)
             ?>
                 <img src=<?= $logo_url; ?> alt=" Image"></img>
             <?php } ?>
-        </div>
-    </div>
-
-    <?php
-    $logo_urls = getLogoURLs($logos);
-    $urls_count = count($logo_urls);
-    $urls_first_half = array_slice($logo_urls, 0, floor($urls_count / 2) - 1);
-    $urls_second_half = array_slice($logo_urls, floor($urls_count / 2));
-
-    array_push($urls_first_half, ...$urls_first_half);
-    array_push($urls_second_half, ...$urls_second_half);
-    ?>
-    <h1> Versione 3</h1>
-    <div style="display: flex; justify-content: center;">
-        <div class=" logo-slider-container" style="width: 450px;">
-            <div class="logo-slider-row-1">
-                <?php
-                foreach ($urls_first_half as $logo_url) {
-                ?>
-                    <img class="logo-slider-img" src=<?= $logo_url; ?> alt=" Image"></img>
-                <?php } ?>
-            </div>
-            <div class="logo-slider-row-2">
-                <?php
-                foreach ($urls_second_half as $logo_url) {
-                ?>
-                    <img class="logo-slider-img" src=<?= $logo_url; ?> alt=" Image"></img>
-                <?php } ?>
-            </div>
         </div>
     </div>
 </div>
