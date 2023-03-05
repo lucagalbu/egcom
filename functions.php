@@ -111,6 +111,7 @@ add_action('after_setup_theme', 'egcom_setup');
 function add_scripts_and_styles()
 {
 	// Custom styles
+	wp_enqueue_style('variables', get_template_directory_uri() . '/custom_assets/css/variables.css');
 	wp_enqueue_style('portfolio', get_template_directory_uri() . '/custom_assets/css/portfolio.css');
 	wp_enqueue_style('home_page', get_template_directory_uri() . '/custom_assets/css/home_page.css');
 	wp_enqueue_style('header', get_template_directory_uri() . '/custom_assets/css/header.css');
