@@ -51,7 +51,7 @@ function egcom_setup()
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__('Primary', 'egcom'),
+			'header-menu' => __('Header Menu'),
 		)
 	);
 
@@ -113,6 +113,7 @@ function add_scripts_and_styles()
 	// Custom styles
 	wp_enqueue_style('portfolio', get_template_directory_uri() . '/custom_assets/css/portfolio.css');
 	wp_enqueue_style('home_page', get_template_directory_uri() . '/custom_assets/css/home_page.css');
+	wp_enqueue_style('header', get_template_directory_uri() . '/custom_assets/css/header.css');
 
 	// Activate Masonry
 	wp_enqueue_script('activate-masonry', get_template_directory_uri() . '/custom_assets/js/masonry.js', array('jquery', 'masonry'), null);
