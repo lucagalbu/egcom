@@ -6,105 +6,153 @@
  * @package egcom
  */
 
-
-// Retrieve all posts of type portoflio. The meta key
-// is created using the Advanced Custom Fields plugin
-$portfolios =
-    $posts = get_posts(array(
-        'numberposts' => -1,
-        'post_type' => 'portfolio',
-        'meta_key' => 'featured_portfolio',
-        'meta_value' => true
-    ));
 ?>
 
 <?php
-/**
- * Return all the posts of type logo.
- * @return \WP_Query The array of logo posts.
- */
-function getLogoPosts()
+function get_hero_image($slug)
 {
-    $query_params = array(
-        'post_type' => 'logo',
-        'post_status' => 'publish',
-        'posts_per_page' => -1
+    $args = array(
+        'post_type' => 'attachment',
+        'name' => sanitize_title($slug),
+        'posts_per_page' => 1,
+        'post_status' => 'inherit',
     );
 
-    $all_posts_query = new WP_Query($query_params);
-
-    wp_reset_query();
-
-    return ($all_posts_query);
-}
-
-/**
- * Return URLs of all the logo images.
- * @param array array of logo posts.
- * @return array array of images URLs.
- */
-function getLogoURLs(WP_Query $posts)
-{
-    $urls = array();
-
-    foreach ($posts->posts as $post) {
-        $urls[] = get_the_post_thumbnail_url($post);
-    }
-
-    return ($urls);
+    $_head = get_posts($args);
+    $id = $_head ? array_pop($_head)->ID : null;
+    echo wp_get_attachment_image($id, "full");
 }
 ?>
 
+<?php
+function get_featured_posts()
+{
+    $posts = get_posts(array(
+        'numberposts'   => 3,
+        'post_type'     => 'portfolio',
+        'meta_key'      => 'featured_portfolio',
+        'meta_value'    => true
+    ));
 
-<!-- Start the rendering of the template -->
-<div class="home-page container">
-    <?php for ($index = 0; $index < count($portfolios); $index++) {
-        $portfolio = $portfolios[$index];
-    ?>
-        <div class="row align-items-center justify-content-center py-5 gx-5">
-            <?php $title_col_class = 'col-6 ' . ($index % 2 ? 'order-last' : ''); ?>
-            <div class="<?= $title_col_class ?>">
-                <?php $description_class = $index % 2 ? 'float-start' : 'float-end'; ?>
-                <div class="<?= $description_class ?>">
-                    <h3><?= get_the_title($portfolio) ?></h3>
-                    <p><?= get_the_excerpt($portfolio) ?></p>
-                    <a href=<?= get_post_permalink($portfolio) ?>>Continua a leggere</a>
+    foreach ($posts as $post) { ?>
+        <div class="col-4 d-flex justify-content-center">
+            <a class="project-container position-relative" href='<?= get_permalink($post) ?>'>
+                <?= get_the_post_thumbnail($post, "post-title"); ?>
+                <div class="d-flex justify-content-center align-items-center text-center post-title">
+                    <?= get_the_title($post); ?>
+                </div>
+                <div class="post-description">
+                    <?= get_the_excerpt($post); ?>
+                </div>
+            </a>
+        </div>
+<? }
+}
+?>
+
+<?php
+function get_reviews()
+{
+    $posts = get_posts(array(
+        'numberposts'   => 3,
+        'post_type'     => 'recensioni'
+    ));
+
+    foreach ($posts as $post) { ?>
+        <div class="col-4">
+            <div class="header d-flex align-items-center">
+                <div class="author-image">
+                    <?= get_the_post_thumbnail($post, "full"); ?>
+                </div>
+                <div class="ms-3">
+                    <div class="author-name"><?= get_the_title($post); ?></div>
+                    <div class="author-description"><?= get_the_excerpt($post); ?></div>
                 </div>
             </div>
-            <?php $image_col_class = 'col-6 ' ?>
-            <div class="<?= $image_col_class ?>">
-                <?php $featured_image_class = "featured-image " . ($index % 2 ? 'float-end' : 'float-start'); ?>
-                <img class="<?= $featured_image_class ?>" src=<?= get_the_post_thumbnail_url($portfolio) ?>> </img>
+            <div class="text mt-4">
+                <?= get_the_content(null, false, $post); ?>
             </div>
         </div>
-    <?php } ?>
+<? }
+}
+?>
 
-    <!--- Logos --->
-    <?php
-    $logos = getLogoPosts();
-    $logo_urls = getLogoURLs($logos);
-    $urls_count = count($logo_urls);
-    $urls_first_half = array_slice($logo_urls, 0, floor($urls_count / 2) - 1);
-    $urls_second_half = array_slice($logo_urls, floor($urls_count / 2));
+<!-- Start the rendering of the template -->
+<div id="home-page">
+    <!-- Hero section -->
+    <div id="home-hero" class="d-flex justify-content-center align-items-center flex-column">
+        <div>
+            <!-- Text and image -->
+            <div class="d-flex align-items-end">
+                <!-- Text on the left -->
+                <div class="text-description d-flex flex-column justify-content-between">
+                    <div class="title">
+                        Elena<br>Galbusera
+                    </div>
+                    <div class="description">
+                        Consulente di Comunicazione & Ufficio Stampa Freelance
+                    </div>
+                    <div class="catch d-flex align-items-center">
+                        <div class="line"></div>
+                        Catturare l'attenzione è una questione di stile.
+                    </div>
+                </div>
 
-    array_push($urls_first_half, ...$urls_first_half);
-    array_push($urls_second_half, ...$urls_second_half);
-    ?>
+                <!-- Image on the right -->
+                <?= get_hero_image("elena-galbusera-recaled") ?>
+            </div>
 
-    <div class=" logo-slider-container">
-        <div class="logo-slider-row-1">
-            <?php
-            foreach ($urls_first_half as $logo_url) {
-            ?>
-                <img src=<?= $logo_url; ?> alt=" Image"></img>
-            <?php } ?>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a class="btn btn-primary" href="#">
+                    Collabora
+                </a>
+                <a class="btn btn-outline-primary" href="#">
+                    Chi sono
+                </a>
+            </div>
         </div>
-        <div class="logo-slider-row-2">
-            <?php
-            foreach ($urls_second_half as $logo_url) {
-            ?>
-                <img src=<?= $logo_url; ?> alt=" Image"></img>
-            <?php } ?>
+    </div>
+
+    <!-- Projects -->
+    <div id="home-projects">
+        <div class="d-flex align-items-center flex-column">
+            <div class="title mt-5">
+                Vedo gente, faccio cose...
+                <br>scrivo e osservo
+                <div class="line mt-4"></div>
+            </div>
+            <div class="description mt-5">
+                <p>
+                    Sono Elena Galbusera e da 20 anni affianco aziende e professionisti
+                    nella progettazione di <b>strategie di comunicazione</b> per
+                    <strong>incrementare la visibilità</strong> online e offline in maniera efficace.
+                </p>
+                <p>
+                    Mi occupo di ufficio stampa, digital PR, social media marketing e
+                    content marketing.
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row gx-3 mt-5">
+                <?= get_featured_posts(); ?>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <a class="btn btn-outline-primary" href="#">Guarda tutti i progetti</a>
+        </div>
+    </div>
+
+    <!-- Reviews -->
+    <div id="home-reviews" class="reviews mt-5">
+        <div class="title">
+            DICONO DI ME
+            <div class="line mt-3"></div>
+        </div>
+        <div class="review-container row gx-5"><?= get_reviews(); ?></div>
+        <div class="d-flex justify-content-center mt-5">
+            <a class="btn btn-outline-primary" href="#">Leggi tutte le recensioni</a>
         </div>
     </div>
 </div>

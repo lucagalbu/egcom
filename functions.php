@@ -243,3 +243,36 @@ function create_logotype()
 	);
 }
 add_action('init', 'create_logotype');
+
+/**
+ * Register the review post type
+ */
+function create_reviewtype()
+{
+	register_post_type(
+		'recensioni',
+		array(
+			'labels' => array(
+				'name' => __('Recensioni'),
+				'singular_name' => __('Recensioni')
+			),
+			'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'recensioni'),
+			'show_in_rest' => true
+		)
+	);
+}
+add_action('init', 'create_reviewtype');
+
+
+/** 
+ * Set image sizes 
+ */
+function set_image_sizes()
+{
+	set_post_thumbnail_size(751, 480, true);
+	add_image_size('post-title', 751, 480, true);
+}
+add_action('after_setup_theme', 'set_image_sizes');
