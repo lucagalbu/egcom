@@ -115,7 +115,7 @@ function get_reviews()
     </div>
 
     <!-- Projects -->
-    <div id="home-projects">
+    <div id="home-projects" class="portfolio-list">
         <div class="d-flex align-items-center flex-column">
             <div class="title mt-5">
                 Vedo gente, faccio cose...
