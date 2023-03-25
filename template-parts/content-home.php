@@ -140,7 +140,7 @@ function get_reviews()
             </div>
         </div>
         <div class="d-flex justify-content-center mt-5">
-            <a class="btn btn-outline-primary" href="#">Guarda tutti i progetti</a>
+            <a class="btn btn-outline-primary" href="/portfolio">Guarda tutti i progetti</a>
         </div>
     </div>
 
