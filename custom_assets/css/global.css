@@ -1,0 +1,80 @@
+/* 
+    General classes
+    ==========================================================================
+*/
+
+.line {
+  border: solid black 1px;
+  height: 0px;
+}
+
+/* 
+    Buttons
+    ==========================================================================
+*/
+.btn.btn-primary {
+  color: white;
+}
+
+.btn.btn-primary,
+.btn.btn-outline-primary {
+  border-color: var(--primary-color);
+  padding: 11px 34px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary-color);
+  background-blend-mode: lighten;
+  background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+}
+
+.btn.btn-outline-primary {
+  color: var(--primary-color);
+}
+
+.btn.btn-primary:hover {
+  background-blend-mode: darken;
+}
+
+.btn.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* 
+    Portfolio thumbnail
+    ==========================================================================
+*/
+
+.portfolio-list .project-container {
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.portfolio-list .post-title {
+  width: 100%;
+  background-color: var(--primary-color);
+  opacity: 90%;
+  height: 55px;
+  color: white;
+  z-index: 1;
+}
+
+.portfolio-list .post-description {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--primary-color);
+  opacity: 90%;
+  color: white;
+  padding: 30px;
+  transition: top 0.5s ease-out;
+}
+
+.portfolio-list a:hover > .post-description {
+  top: 0;
+}

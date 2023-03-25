@@ -51,7 +51,7 @@ function egcom_setup()
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__('Primary', 'egcom'),
+			'header-menu' => __('Header Menu'),
 		)
 	);
 
@@ -111,10 +111,12 @@ add_action('after_setup_theme', 'egcom_setup');
 function add_scripts_and_styles()
 {
 	// Custom styles
-	wp_enqueue_style('custom_style', get_template_directory_uri() . '/custom_assets/css/custom_style.css');
-
-	// Activate Masonry
-	wp_enqueue_script('activate-masonry', get_template_directory_uri() . '/custom_assets/js/masonry.js', array('jquery', 'masonry'), null);
+	wp_enqueue_style('variables', get_template_directory_uri() . '/custom_assets/css/variables.css');
+	wp_enqueue_style('global', get_template_directory_uri() . '/custom_assets/css/global.css');
+	wp_enqueue_style('portfolio', get_template_directory_uri() . '/custom_assets/css/portfolio.css');
+	wp_enqueue_style('home_page', get_template_directory_uri() . '/custom_assets/css/home_page.css');
+	wp_enqueue_style('header', get_template_directory_uri() . '/custom_assets/css/header.css');
+	wp_enqueue_style('single_portfolio', get_template_directory_uri() . '/custom_assets/css/single_portfolio.css');
 }
 add_action('wp_enqueue_scripts', 'add_scripts_and_styles');
 
@@ -217,3 +219,58 @@ function create_portfoliotype()
 	);
 }
 add_action('init', 'create_portfoliotype');
+
+/**
+ * Register the logo post type
+ */
+function create_logotype()
+{
+	register_post_type(
+		'logo',
+		array(
+			'labels' => array(
+				'name' => __('Logos'),
+				'singular_name' => __('Logo')
+			),
+			'description' => "Post containing only logos as feature image.",
+			'supports' => array('title', 'thumbnail'),
+			'public' => true,
+			'rewrite' => false,
+			'show_in_rest' => true
+		)
+	);
+}
+add_action('init', 'create_logotype');
+
+/**
+ * Register the review post type
+ */
+function create_reviewtype()
+{
+	register_post_type(
+		'recensioni',
+		array(
+			'labels' => array(
+				'name' => __('Recensioni'),
+				'singular_name' => __('Recensioni')
+			),
+			'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'recensioni'),
+			'show_in_rest' => true
+		)
+	);
+}
+add_action('init', 'create_reviewtype');
+
+
+/** 
+ * Set image sizes 
+ */
+function set_image_sizes()
+{
+	set_post_thumbnail_size(751, 480, true);
+	add_image_size('post-title', 751, 480, true);
+}
+add_action('after_setup_theme', 'set_image_sizes');

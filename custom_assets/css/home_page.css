@@ -1,0 +1,148 @@
+/* 
+  Hero section
+	==========================================================================
+*/
+
+#home-hero {
+  background-color: #ebe4df;
+  height: 100vh;
+}
+
+#home-hero .text-description {
+  width: 510px;
+  height: 430px;
+}
+
+#home-hero .text-description > .title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 120%;
+}
+
+#home-hero .text-description > .description {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 120%;
+}
+
+#home-hero .text-description > .catch {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+#home-hero .text-description > .catch > .line {
+  width: 72.5px;
+  margin-right: 9.5px;
+}
+
+#home-hero img.size-full {
+  height: fit-content;
+}
+
+#home-hero .buttons {
+  display: flex;
+  margin-top: 55px;
+}
+
+#home-hero .buttons > .btn-primary {
+  margin-right: 47px;
+}
+
+/* 
+  Projects section
+	==========================================================================
+*/
+
+#home-page > #home-projects {
+  padding: 28px 48px;
+}
+
+#home-projects .title {
+  color: var(--primary-color);
+  font-size: 36px;
+  text-align: center;
+}
+
+#home-projects .title > .line {
+  width: 50%;
+  transform: translateX(50%);
+}
+
+#home-projects div.description {
+  width: 710px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+#home-page > #home-projects .posts {
+  width: 100%;
+  max-width: 1340px;
+}
+
+#home-page > #home-projects div.featured-post > .post-container {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+}
+
+#home-page
+  > #home-projects
+  div.featured-post
+  > .post-container
+  > .post-description-container
+  > .post-description.visible {
+  bottom: 0;
+}
+
+#home-page
+  > #home-projects
+  div.featured-post
+  > .post-container
+  > .post-description-container
+  > a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+/* 
+  Reviews section
+	==========================================================================
+*/
+
+#home-page > #home-reviews {
+  background-color: var(--secondary-color);
+  padding: 28px 48px;
+}
+
+#home-page > #home-reviews > .title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#home-page > #home-reviews > .title > .line {
+  width: 80.5px;
+  border-width: 3px;
+}
+
+#home-page > #home-reviews .header .author-image {
+  flex-basis: 94px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+#home-page > #home-reviews .header .author-name {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#home-page > #home-reviews .header .author-description {
+  font-size: 12px;
+}
+
+#home-page > #home-reviews > .review-container {
+  margin-top: 100px;
+}
