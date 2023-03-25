@@ -117,9 +117,6 @@ function add_scripts_and_styles()
 	wp_enqueue_style('home_page', get_template_directory_uri() . '/custom_assets/css/home_page.css');
 	wp_enqueue_style('header', get_template_directory_uri() . '/custom_assets/css/header.css');
 	wp_enqueue_style('single_portfolio', get_template_directory_uri() . '/custom_assets/css/single_portfolio.css');
-
-	// Activate Masonry
-	wp_enqueue_script('activate-masonry', get_template_directory_uri() . '/custom_assets/js/masonry.js', array('jquery', 'masonry'), null);
 }
 add_action('wp_enqueue_scripts', 'add_scripts_and_styles');
 
