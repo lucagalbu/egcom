@@ -12,17 +12,7 @@
     </div>
 
     <div class="container content">
-        <div class="row g-5">
-            <div class="col-9">
-                <?= the_content(); ?>
-            </div>
-            <div class="col-3">
-                INCARICO<br>
-                Ufficio Stampa<br>
-                Social Media Marketing<br>
-                Content Marketing
-            </div>
-        </div>
+        <?= the_content(); ?>
     </div>
 </div>
 </div>
