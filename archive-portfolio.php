@@ -26,7 +26,7 @@ get_header();
 $portfolio_items = getPortfolioPosts();
 ?>
 
-<main id="portfolio" class="portfolio-list">
+<div id="portfolio" class="portfolio-list">
     <div class=" container">
         <div class="row ">
             <?php
@@ -47,7 +47,7 @@ $portfolio_items = getPortfolioPosts();
             <?php } ?>
         </div>
     </div>
-</main>
+</div>
 
 <?php
 get_footer();
