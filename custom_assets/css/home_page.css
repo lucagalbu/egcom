@@ -63,31 +63,12 @@
   padding: 28px 48px;
 }
 
-#home-page > #home-reviews > .title {
-  font-size: 36px;
-  font-weight: 700;
-}
-
 #home-page > #home-reviews > .title > .line {
   width: 80.5px;
   border-width: 3px;
 }
 
-#home-page > #home-reviews .header .author-image {
-  flex-basis: 94px;
+#home-page > #home-reviews .author-image {
   flex-grow: 0;
   flex-shrink: 0;
-}
-
-#home-page > #home-reviews .header .author-name {
-  font-size: 12px;
-  font-weight: 700;
-}
-
-#home-page > #home-reviews .header .author-description {
-  font-size: 12px;
-}
-
-#home-page > #home-reviews > .review-container {
-  margin-top: 100px;
 }
