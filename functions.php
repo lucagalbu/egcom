@@ -272,5 +272,6 @@ function set_image_sizes()
 {
 	set_post_thumbnail_size(751, 480, true);
 	add_image_size('post-title', 751, 480, true);
+	add_image_size('review-thumbnail', 100, 100, true);
 }
 add_action('after_setup_theme', 'set_image_sizes');
