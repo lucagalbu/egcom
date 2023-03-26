@@ -36,10 +36,6 @@
 	==========================================================================
 */
 
-#home-page > #home-projects {
-  padding: 28px 48px;
-}
-
 #home-page > #home-projects .title {
   color: var(--primary-color);
 }
@@ -60,7 +56,6 @@
 
 #home-page > #home-reviews {
   background-color: var(--secondary-color);
-  padding: 28px 48px;
 }
 
 #home-page > #home-reviews > .title > .line {
