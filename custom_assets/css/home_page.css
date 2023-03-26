@@ -3,49 +3,31 @@
 	==========================================================================
 */
 
-#home-hero {
+#home-page > #home-hero {
   background-color: #ebe4df;
   height: 100vh;
 }
 
-#home-hero .text-description {
+#home-page > #home-hero .text-description {
   width: 510px;
   height: 430px;
 }
 
-#home-hero .text-description > .title {
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 120%;
-}
-
-#home-hero .text-description > .description {
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 120%;
-}
-
-#home-hero .text-description > .catch {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 120%;
-}
-
-#home-hero .text-description > .catch > .line {
+#home-page > #home-hero .text-description > .catch > .line {
   width: 72.5px;
   margin-right: 9.5px;
 }
 
-#home-hero img.size-full {
+#home-page > #home-hero img.size-full {
   height: fit-content;
 }
 
-#home-hero .buttons {
+#home-page > #home-hero .buttons {
   display: flex;
   margin-top: 55px;
 }
 
-#home-hero .buttons > .btn-primary {
+#home-page > #home-hero .buttons > .btn-primary {
   margin-right: 47px;
 }
 
@@ -58,54 +40,17 @@
   padding: 28px 48px;
 }
 
-#home-projects .title {
+#home-page > #home-projects .title {
   color: var(--primary-color);
-  font-size: 36px;
-  text-align: center;
 }
 
-#home-projects .title > .line {
+#home-page > #home-projects .title > .line {
   width: 50%;
   transform: translateX(50%);
 }
 
-#home-projects div.description {
+#home-page > #home-projects div.description {
   width: 710px;
-  text-align: center;
-  font-size: 20px;
-  line-height: 150%;
-}
-
-#home-page > #home-projects .posts {
-  width: 100%;
-  max-width: 1340px;
-}
-
-#home-page > #home-projects div.featured-post > .post-container {
-  display: flex;
-  flex-direction: column-reverse;
-  height: 100%;
-}
-
-#home-page
-  > #home-projects
-  div.featured-post
-  > .post-container
-  > .post-description-container
-  > .post-description.visible {
-  bottom: 0;
-}
-
-#home-page
-  > #home-projects
-  div.featured-post
-  > .post-container
-  > .post-description-container
-  > a {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
 }
 
 /* 
