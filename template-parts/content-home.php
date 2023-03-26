@@ -86,15 +86,15 @@ function get_reviews()
             <div class="d-flex align-items-end">
                 <!-- Text on the left -->
                 <div class="text-description d-flex flex-column justify-content-between">
-                    <div class="title">
+                    <h1 class="m-0">
                         Tom<br>Johnson
-                    </div>
-                    <div class="description">
+                    </h1>
+                    <h3>
                         Consulente di Comunicazione & Ufficio Stampa Freelance
-                    </div>
+                    </h3>
                     <div class="catch d-flex align-items-center">
                         <div class="line"></div>
-                        Catturare l'attenzione è una questione di stile.
+                        <p class="m-0"><small>Catturare l'attenzione è una questione di stile.</small></p>
                     </div>
                 </div>
 
@@ -117,18 +117,18 @@ function get_reviews()
     <!-- Projects -->
     <div id="home-projects" class="portfolio-list">
         <div class="d-flex align-items-center flex-column">
-            <div class="title mt-5">
+            <h3 class="title text-center mt-5">
                 Vedo gente, faccio cose...
                 <br>scrivo e osservo
                 <div class="line mt-4"></div>
-            </div>
+            </h3>
             <div class="description mt-5">
-                <p>
+                <p class="text-center">
                     Sono Tom Johnson e da 20 anni affianco aziende e professionisti
                     nella progettazione di <b>strategie di comunicazione</b> per
                     <strong>incrementare la visibilità</strong> online e offline in maniera efficace.
                 </p>
-                <p>
+                <p class="text-center">
                     Mi occupo di ufficio stampa, digital PR, social media marketing e
                     content marketing.
                 </p>
