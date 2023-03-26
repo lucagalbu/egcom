@@ -58,24 +58,36 @@ function get_reviews()
         'post_type'     => 'recensioni'
     ));
 
-    foreach ($posts as $post) { ?>
-        <div class="col-4">
-            <div class="header d-flex align-items-center">
-                <div class="author-image">
-                    <?= get_the_post_thumbnail($post, "full"); ?>
-                </div>
-                <div class="ms-3">
-                    <div class="author-name"><?= get_the_title($post); ?></div>
-                    <div class="author-description"><?= get_the_excerpt($post); ?></div>
-                </div>
-            </div>
-            <div class="text mt-4">
-                <?= get_the_content(null, false, $post); ?>
-            </div>
-        </div>
-<? }
-}
 ?>
+    <div class="container-flex">
+        <div class="row mt-5 gx-4">
+            <?php
+            foreach ($posts as $post) { ?>
+                <div class="col-4 d-flex">
+                    <div class="author-image">
+                        <?= get_the_post_thumbnail($post, "review-thumbnail"); ?>
+                    </div>
+                    <div class="ms-3">
+                        <p class="m-0"><strong><?= get_the_title($post); ?></strong></p>
+                        <p class="m-0"><small><small><?= get_the_excerpt($post); ?></small></small></p>
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
+
+        <div class="row gx-4">
+            <?php
+            foreach ($posts as $post) { ?>
+                <div class="col-4">
+                    <p><?= get_the_content(null, false, $post); ?></p>
+                </div>
+            <?php } ?>
+        </div>
+    </div>
+<?php } ?>
+
+
+
 
 <!-- Start the rendering of the template -->
 <div id="home-page">
@@ -145,12 +157,12 @@ function get_reviews()
     </div>
 
     <!-- Reviews -->
-    <div id="home-reviews" class="reviews mt-5">
+    <div id="home-reviews" class="mt-5">
         <div class="title">
-            DICONO DI ME
+            <h2>DICONO DI ME</h2>
             <div class="line mt-3"></div>
         </div>
-        <div class="review-container row gx-5"><?= get_reviews(); ?></div>
+        <?= get_reviews(); ?>
         <div class="d-flex justify-content-center mt-5">
             <a class="btn btn-outline-primary" href="#">Leggi tutte le recensioni</a>
         </div>
