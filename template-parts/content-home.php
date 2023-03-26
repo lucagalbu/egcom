@@ -92,7 +92,7 @@ function get_reviews()
 <!-- Start the rendering of the template -->
 <div id="home-page">
     <!-- Hero section -->
-    <div id="home-hero" class="d-flex justify-content-center align-items-center flex-column">
+    <div id="home-hero" class="outer-padding d-flex justify-content-center align-items-center flex-column">
         <div>
             <!-- Text and image -->
             <div class="d-flex align-items-end">
@@ -127,7 +127,7 @@ function get_reviews()
     </div>
 
     <!-- Projects -->
-    <div id="home-projects" class="portfolio-list">
+    <div id="home-projects" class="outer-padding portfolio-list">
         <div class="d-flex align-items-center flex-column">
             <h3 class="title text-center mt-5">
                 Vedo gente, faccio cose...
@@ -157,7 +157,7 @@ function get_reviews()
     </div>
 
     <!-- Reviews -->
-    <div id="home-reviews" class="mt-5">
+    <div id="home-reviews" class="outer-padding mt-5">
         <div class="title">
             <h2>DICONO DI ME</h2>
             <div class="line mt-3"></div>
