@@ -26,9 +26,13 @@ get_header();
 $portfolio_items = getPortfolioPosts();
 ?>
 
-<div id="portfolio" class="portfolio-list">
-    <div class=" container">
-        <div class="row ">
+<div id="portfolio">
+    <div class="outer-padding title-strip">
+        <h1>Progetti</h1>
+    </div>
+
+    <div class="outer-padding container portfolio-list">
+        <div class="row mt-3">
             <?php
             while ($portfolio_items->have_posts()) {
                 $portfolio_items->the_post();
