@@ -12,6 +12,15 @@
   padding: 28px 48px;
 }
 
+.title-strip {
+  background-color: var(--secondary-color-darker);
+  padding-top: var(--header-height);
+  height: 175px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
 /* 
     Fonts
     ==========================================================================
