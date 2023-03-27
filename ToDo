@@ -9,18 +9,10 @@
 
 - Header must scroll and then reappers as described in Figma
 
-- Transform all font sizes to relative?
-
-- Set default font size (1rem) to 20px
-
 - Do we want some effect when clicking on buttons?
-
-- Use h1, p,... instead of text inside div with custom font size and weight
 
 - Image in featured projects are featured images at the correct size. However, in this way I can only set one image size, and this will lead to a boring masonry. Can I use the wp sizes instead (full, thumbnail,...)
 
-- Uniforme sizes (font ,margins,...) with bootstrap classes
-
-- Clean unused css classes in home (mainly project section)
+- outer-padding should be only horizontal. Uniform padding and margin between elements.
 
 - Remove custom size post-title for images and set its size as thumbnail size
