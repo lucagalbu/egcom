@@ -79,7 +79,7 @@ function get_reviews()
             <?php
             foreach ($posts as $post) { ?>
                 <div class="col-4">
-                    <p><?= get_the_content(null, false, $post); ?></p>
+                    <?= get_the_content(null, false, $post); ?>
                 </div>
             <?php } ?>
         </div>
@@ -119,7 +119,7 @@ function get_reviews()
                 <a class="btn btn-primary" href="#">
                     Collabora
                 </a>
-                <a class="btn btn-outline-primary" href="#">
+                <a class="btn btn-outline-primary" href="/chi-sono">
                     Chi sono
                 </a>
             </div>
@@ -129,11 +129,14 @@ function get_reviews()
     <!-- Projects -->
     <div id="home-projects" class="outer-padding portfolio-list">
         <div class="d-flex align-items-center flex-column">
-            <h3 class="title text-center mt-5">
-                Vedo gente, faccio cose...
-                <br>scrivo e osservo
+            <div class="title text-center mt-5">
+                <h3>
+                    Vedo gente, faccio cose...
+                    <br>scrivo e osservo
+                </h3>
                 <div class="line mt-4"></div>
-            </h3>
+            </div>
+
             <div class="description mt-5">
                 <p class="text-center">
                     Sono Tom Johnson e da 20 anni affianco aziende e professionisti
