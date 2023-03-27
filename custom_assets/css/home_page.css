@@ -4,7 +4,7 @@
 */
 
 #home-page > #home-hero {
-  background-color: #ebe4df;
+  background-color: var(--secondary-color-darker);
   height: 100vh;
 }
 
