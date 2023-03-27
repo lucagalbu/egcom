@@ -1,0 +1,9 @@
+#chi-sono .title {
+  color: var(--primary-color);
+  width: 524px;
+}
+
+#chi-sono .title > .line {
+  width: 50%;
+  transform: translateX(50%);
+}

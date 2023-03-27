@@ -116,6 +116,7 @@ function add_scripts_and_styles()
 	wp_enqueue_style('portfolio', get_template_directory_uri() . '/custom_assets/css/portfolio.css');
 	wp_enqueue_style('home_page', get_template_directory_uri() . '/custom_assets/css/home_page.css');
 	wp_enqueue_style('header', get_template_directory_uri() . '/custom_assets/css/header.css');
+	wp_enqueue_style('chi_sono', get_template_directory_uri() . '/custom_assets/css/chi_sono.css');
 	wp_enqueue_style('single_portfolio', get_template_directory_uri() . '/custom_assets/css/single_portfolio.css');
 }
 add_action('wp_enqueue_scripts', 'add_scripts_and_styles');
