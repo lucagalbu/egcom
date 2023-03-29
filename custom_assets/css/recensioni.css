@@ -1,0 +1,45 @@
+#reviews .line {
+  width: 25%;
+}
+
+#reviews .author-pic {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+#reviews .review-text {
+  max-height: 90px; /* To show 3 lines: 3 * line-height in px */
+  overflow: hidden;
+  position: relative; /* To place the ::after */
+  transition: max-height 1s cubic-bezier(0, 1, 0, 1) -0.1s;
+}
+
+#reviews .review-text.review-text-expanded {
+  max-height: 1000px;
+  position: inherit;
+  transition: max-height 1s ease-in;
+}
+
+#reviews .title,
+#reviews .excerpt {
+  color: var(--primary-color);
+}
+
+#reviews .review-text::after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.5em; /* line-height */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1) 50%
+  );
+}
+
+#reviews .review-text.review-text-expanded::after {
+  display: none;
+}
