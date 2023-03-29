@@ -167,7 +167,7 @@ function get_reviews()
         </div>
         <?= get_reviews(); ?>
         <div class="d-flex justify-content-center mt-5">
-            <a class="btn btn-outline-primary" href="#">Leggi tutte le recensioni</a>
+            <a class="btn btn-outline-primary" href="/recensioni">Leggi tutte le recensioni</a>
         </div>
     </div>
 </div>

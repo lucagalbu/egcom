@@ -118,6 +118,9 @@ function add_scripts_and_styles()
 	wp_enqueue_style('header', get_template_directory_uri() . '/custom_assets/css/header.css');
 	wp_enqueue_style('chi_sono', get_template_directory_uri() . '/custom_assets/css/chi_sono.css');
 	wp_enqueue_style('single_portfolio', get_template_directory_uri() . '/custom_assets/css/single_portfolio.css');
+	wp_enqueue_style('recensioni', get_template_directory_uri() . '/custom_assets/css/recensioni.css');
+
+	wp_enqueue_script('recensioni', get_template_directory_uri() . '/custom_assets/js/recensioni.js');
 }
 add_action('wp_enqueue_scripts', 'add_scripts_and_styles');
 
