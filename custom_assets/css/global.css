@@ -46,6 +46,15 @@
   justify-content: center;
 }
 
+.section-title {
+  color: var(--primary-color);
+}
+
+.section-title > .line {
+  width: 50%;
+  transform: translateX(50%);
+}
+
 /* 
     Fonts
     ==========================================================================

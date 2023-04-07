@@ -129,7 +129,7 @@ function get_reviews()
     <!-- Services -->
     <div id="home-services" class="outer-padding">
         <div class="d-flex align-items-center flex-column">
-            <div class="title text-center mt-5">
+            <div class="section-title text-center mt-5">
                 <h3>
                     Vedo gente, faccio cose...
                     <br>scrivo e osservo

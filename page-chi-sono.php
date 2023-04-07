@@ -10,7 +10,7 @@ get_header();
     </div>
 
     <div class="outer-padding d-flex justify-content-center mt-4">
-        <div class="title">
+        <div class="section-title col-4">
             <h3 class="text-center">
                 <?= get_the_title() ?>
             </h3>
