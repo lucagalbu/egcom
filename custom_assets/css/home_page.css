@@ -36,15 +36,6 @@
 	==========================================================================
 */
 
-#home-page > #home-services .title {
-  color: var(--primary-color);
-}
-
-#home-page > #home-services .title > .line {
-  width: 50%;
-  transform: translateX(50%);
-}
-
 #home-page > #home-services div.description {
   width: 710px;
 }
