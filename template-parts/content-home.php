@@ -117,7 +117,7 @@ function get_reviews()
             <!-- Buttons -->
             <div class="buttons">
                 <a class="btn btn-primary" href="#">
-                    Collabora
+                    Contattami
                 </a>
                 <a class="btn btn-outline-primary" href="/chi-sono">
                     Chi sono
