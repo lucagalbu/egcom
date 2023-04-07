@@ -148,8 +148,10 @@ function get_reviews()
                     content marketing.
                 </p>
             </div>
+            <div class="d-flex justify-content-center mt-3">
+                <a class="btn btn-outline-primary" href="/portfolio">Cosa posso fare per te</a>
         </div>
-        <div class="container-fluid">
+        </div>
             <div class="row gx-3 mt-5">
                 <?= get_featured_posts(); ?>
             </div>
