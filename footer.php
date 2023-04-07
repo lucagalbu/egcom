@@ -11,22 +11,42 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'egcom' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'egcom' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'egcom' ), 'egcom', '<a href="https://github.com/lucagalbu">Luca Galbusera</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+<footer id="footer" class="outer-padding">
+	<div class="flex-container">
+		<div class="row">
+			<div class="col-6">
+				<p>
+					<small>
+						Tom Johnson
+						<br>xxx.xxx@mail.org
+						<br>+00 000 12345678
+					</small>
+				</p>
+
+				<a class="text-decoration-none" href="https://www.facebook.com/">
+					<i class="me-2 fa-brands fa-square-facebook"></i>
+				</a>
+				<a class="text-decoration-none" href="https://www.linkedin.com/">
+					<i class="me-2 fa-brands fa-linkedin"></i>
+				</a>
+				<a>
+					<i class="me-2 fa-brands fa-square-instagram"></i>
+				</a>
+				</p>
+			</div>
+			<div class="col-6">
+				<p class="text-end">
+					<small>
+						© 2023 website di Tom Johnson. Tutti i diritti riservati.
+						<br>P.I. xxxxxxxx C.F. xxxxxxx
+						<br>Realizzato da Luca Galbusera
+					</small>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
 
 <?php wp_footer(); ?>
 
