@@ -126,8 +126,8 @@ function get_reviews()
         </div>
     </div>
 
-    <!-- Projects -->
-    <div id="home-projects" class="outer-padding portfolio-list">
+    <!-- Services -->
+    <div id="home-services" class="outer-padding">
         <div class="d-flex align-items-center flex-column">
             <div class="title text-center mt-5">
                 <h3>
@@ -152,12 +152,21 @@ function get_reviews()
                 <a class="btn btn-outline-primary" href="/portfolio">Cosa posso fare per te</a>
         </div>
         </div>
+    </div>
+
+    <!-- Cases -->
+    <div id="home-cases" class="outer-padding mt-3 portfolio-list">
+        <div class="title">
+            <h2>CASE STUDIES</h2>
+            <div class="line mt-3"></div>
+        </div>
+        <div class="container-flex">
             <div class="row gx-3 mt-5">
                 <?= get_featured_posts(); ?>
             </div>
         </div>
         <div class="d-flex justify-content-center mt-5">
-            <a class="btn btn-outline-primary" href="/portfolio">Guarda tutti i progetti</a>
+            <a class="btn btn-outline-primary" href="/portfolio">Altri case studies</a>
         </div>
     </div>
 

@@ -32,31 +32,41 @@
 }
 
 /* 
-  Projects section
+  Services section
 	==========================================================================
 */
 
-#home-page > #home-projects .title {
+#home-page > #home-services .title {
   color: var(--primary-color);
 }
 
-#home-page > #home-projects .title > .line {
+#home-page > #home-services .title > .line {
   width: 50%;
   transform: translateX(50%);
 }
 
-#home-page > #home-projects div.description {
+#home-page > #home-services div.description {
   width: 710px;
+}
+
+/* 
+  Case studies section
+	==========================================================================
+*/
+
+#home-page > #home-cases {
+  background-color: var(--secondary-color);
+}
+
+#home-page > #home-cases > .title > .line {
+  width: 80.5px;
+  border-width: 3px;
 }
 
 /* 
   Reviews section
 	==========================================================================
 */
-
-#home-page > #home-reviews {
-  background-color: var(--secondary-color);
-}
 
 #home-page > #home-reviews > .title > .line {
   width: 80.5px;
