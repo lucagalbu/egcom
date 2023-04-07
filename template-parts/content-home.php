@@ -150,7 +150,7 @@ function get_reviews()
             </div>
             <div class="d-flex justify-content-center mt-3">
                 <a class="btn btn-outline-primary" href="/portfolio">Cosa posso fare per te</a>
-        </div>
+            </div>
         </div>
     </div>
 
@@ -177,7 +177,7 @@ function get_reviews()
             <div class="line mt-3"></div>
         </div>
         <?= get_reviews(); ?>
-        <div class="d-flex justify-content-center mt-5">
+        <div class="d-flex justify-content-center mt-3 pb-3">
             <a class="btn btn-outline-primary" href="/recensioni">Leggi tutte le recensioni</a>
         </div>
     </div>
