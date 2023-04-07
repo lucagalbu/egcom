@@ -1,0 +1,7 @@
+#servizi .tail-container {
+  height: 100%;
+}
+
+#servizi .tail-container.colored-background {
+  background-color: var(--secondary-color);
+}
