@@ -1,0 +1,7 @@
+#footer {
+  background-color: var(--secondary-color-darker);
+}
+
+#footer a > i {
+  color: var(--primary-color);
+}
