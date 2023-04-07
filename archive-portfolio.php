@@ -28,7 +28,7 @@ $portfolio_items = getPortfolioPosts();
 
 <div id="portfolio">
     <div class="outer-padding title-strip">
-        <h1>Progetti</h1>
+        <h1>Case Studies</h1>
     </div>
 
     <div class="outer-padding container portfolio-list">
