@@ -120,6 +120,7 @@ function add_scripts_and_styles()
 	wp_enqueue_style('single_portfolio', get_template_directory_uri() . '/custom_assets/css/single_portfolio.css');
 	wp_enqueue_style('recensioni', get_template_directory_uri() . '/custom_assets/css/recensioni.css');
 	wp_enqueue_style('footer', get_template_directory_uri() . '/custom_assets/css/footer.css');
+	wp_enqueue_style('servizi', get_template_directory_uri() . '/custom_assets/css/servizi.css');
 
 	wp_enqueue_script('fa-icons', 'https://kit.fontawesome.com/8dc7859c9e.js');
 	wp_enqueue_script('recensioni', get_template_directory_uri() . '/custom_assets/js/recensioni.js');
@@ -279,5 +280,6 @@ function set_image_sizes()
 	set_post_thumbnail_size(751, 480, true);
 	add_image_size('post-title', 751, 480, true);
 	add_image_size('review-thumbnail', 100, 100, true);
+	add_image_size('services-icon', 70, 0, false);
 }
 add_action('after_setup_theme', 'set_image_sizes');

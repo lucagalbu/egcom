@@ -149,7 +149,7 @@ function get_reviews()
                 </p>
             </div>
             <div class="d-flex justify-content-center mt-3">
-                <a class="btn btn-outline-primary" href="/portfolio">Cosa posso fare per te</a>
+                <a class="btn btn-outline-primary" href="/servizi">Cosa posso fare per te</a>
             </div>
         </div>
     </div>
