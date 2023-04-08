@@ -14,7 +14,6 @@
 
 .title-strip {
   background-color: var(--secondary-color-darker);
-  padding-top: var(--header-height);
   height: 175px;
   display: flex;
   align-items: start;
