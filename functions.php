@@ -121,6 +121,7 @@ function add_scripts_and_styles()
 	wp_enqueue_style('recensioni', get_template_directory_uri() . '/custom_assets/css/recensioni.css');
 	wp_enqueue_style('footer', get_template_directory_uri() . '/custom_assets/css/footer.css');
 	wp_enqueue_style('servizi', get_template_directory_uri() . '/custom_assets/css/servizi.css');
+	wp_enqueue_style('contatti', get_template_directory_uri() . '/custom_assets/css/contatti.css');
 
 	wp_enqueue_script('fa-icons', 'https://kit.fontawesome.com/8dc7859c9e.js');
 	wp_enqueue_script('recensioni', get_template_directory_uri() . '/custom_assets/js/recensioni.js');

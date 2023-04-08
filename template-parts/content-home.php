@@ -116,7 +116,7 @@ function get_reviews()
 
             <!-- Buttons -->
             <div class="buttons">
-                <a class="btn btn-primary" href="#">
+                <a class="btn btn-primary" href="/contatti">
                     Contattami
                 </a>
                 <a class="btn btn-outline-primary" href="/chi-sono">

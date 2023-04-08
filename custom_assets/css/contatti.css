@@ -1,0 +1,4 @@
+#contacts .contacts-container {
+  height: calc(100vh - 391px);
+  min-height: 200px;
+}
