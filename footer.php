@@ -39,7 +39,7 @@
 				<p class="text-end">
 					<small>
 						© 2023 website di Tom Johnson. Tutti i diritti riservati.
-						<br>P.I. xxxxxxxx C.F. xxxxxxx
+						<br>P.I. xxxxxxxx
 						<br>Realizzato da Luca Galbusera
 					</small>
 				</p>
