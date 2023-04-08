@@ -39,7 +39,7 @@
 				<p class="text-end">
 					<small>
 						© 2023 EGcom di Elena Galbusera. Tutti i diritti riservati.
-						<br>P.I. 02836540134 C.F. GLBLNE76S57F205L
+						<br>P.I. 02836540134
 						<br>Realizzato da Luca Galbusera
 					</small>
 				</p>
