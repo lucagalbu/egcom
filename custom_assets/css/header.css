@@ -16,3 +16,13 @@
   height: 58px;
   width: auto;
 }
+
+#masthead nav a {
+  color: var(--primary-color);
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+#masthead nav a:visited {
+  color: var(--primary-color);
+}
