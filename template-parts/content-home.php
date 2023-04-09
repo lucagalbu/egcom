@@ -92,36 +92,44 @@ function get_reviews()
 <!-- Start the rendering of the template -->
 <div id="home-page">
     <!-- Hero section -->
-    <div id="home-hero" class="outer-padding d-flex justify-content-center align-items-center flex-column">
-        <div>
-            <!-- Text and image -->
-            <div class="d-flex align-items-end">
-                <!-- Text on the left -->
-                <div class="text-description d-flex flex-column justify-content-between">
+    <div id="home-hero">
+        <div class="container-xxl d-flex flex-column justify-content-center px-3">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-sm-5 col-xxl-4 text-description d-flex flex-column justify-content-between">
                     <h1 class="m-0">
                         Tom<br>Johnson
                     </h1>
                     <h3>
                         Consulente di Comunicazione & Ufficio Stampa Freelance
                     </h3>
+                    <div class="d-sm-none d-inline image-small">
+                        <!-- Image between the text -->
+                        <?= get_hero_image("elena-galbusera-recaled") ?>
+                    </div>
                     <div class="catch d-flex align-items-center">
                         <div class="line"></div>
                         <p class="m-0"><small>Catturare l'attenzione è una questione di stile.</small></p>
                     </div>
                 </div>
-
-                <!-- Image on the right -->
-                <?= get_hero_image("tom-johnson-recaled") ?>
+                <div class="col-3 d-none d-sm-flex justify-content-end">
+                    <div class="d-sm-inline d-none image-large">
+                        <!-- Image on the right -->
+                        <?= get_hero_image("tom-johnson-recaled") ?>
+                    </div>
+                </div>
             </div>
-
             <!-- Buttons -->
-            <div class="buttons">
-                <a class="btn btn-primary" href="/contatti">
-                    Contattami
-                </a>
-                <a class="btn btn-outline-primary" href="/chi-sono">
-                    Chi sono
-                </a>
+            <div class="row me-4 d-flex justify-content-center">
+                <div class="buttons mt-3 col-12 col-sm-5 col-xxl-4">
+                    <a class="btn btn-primary me-4" href="/contatti">
+                        Contattami
+                    </a>
+                    <a class="btn btn-outline-primary" href="/chi-sono">
+                        Chi sono
+                    </a>
+                </div>
+                <!-- Required to align buttons to the text on the left side -->
+                <div class="col-3 d-none d-sm-inline"></div>
             </div>
         </div>
     </div>
