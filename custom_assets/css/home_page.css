@@ -5,30 +5,34 @@
 
 #home-page > #home-hero {
   background-color: var(--secondary-color-darker);
-  height: 100vh;
+}
+
+#home-page > #home-hero > .container-xxl {
+  height: calc(100vh - var(--header-height));
+  min-height: 30rem;
 }
 
 #home-page > #home-hero .text-description {
-  width: 510px;
-  height: 430px;
+  min-height: 17rem;
 }
 
 #home-page > #home-hero .text-description > .catch > .line {
-  width: 72.5px;
+  width: 3.5rem;
   margin-right: 9.5px;
 }
 
-#home-page > #home-hero img.size-full {
+#home-page > #home-hero .text-description > .image-small {
+  height: 250px;
+  width: fit-content;
+}
+
+#home-page > #home-hero .text-description > .image-small > img {
+  width: fit-content;
+  height: 100%;
+}
+
+#home-page > #home-hero .text-description > .image-large {
   height: fit-content;
-}
-
-#home-page > #home-hero .buttons {
-  display: flex;
-  margin-top: 55px;
-}
-
-#home-page > #home-hero .buttons > .btn-primary {
-  margin-right: 47px;
 }
 
 /* 

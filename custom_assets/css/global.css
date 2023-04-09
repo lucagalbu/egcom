@@ -9,7 +9,7 @@
 }
 
 .outer-padding {
-  padding: 28px 48px;
+  padding: 1.5rem 2.5rem;
 }
 
 .title-strip {
@@ -109,7 +109,7 @@ p {
 .btn.btn-primary,
 .btn.btn-outline-primary {
   border-color: var(--primary-color);
-  padding: 11px 34px;
+  padding: 0.5rem 1.3rem;
   border-radius: 20px;
 }
 
