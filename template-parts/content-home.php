@@ -35,7 +35,7 @@ function get_featured_posts()
     ));
 
     foreach ($posts as $post) { ?>
-        <div class="col-4 d-flex justify-content-center">
+        <div class="col-xl-4 col-sm-6 col-12 d-flex justify-content-center">
             <a class="project-container position-relative" href='<?= get_permalink($post) ?>'>
                 <?= get_the_post_thumbnail($post, "post-title"); ?>
                 <div class="d-flex justify-content-center align-items-center text-center post-title">
@@ -168,8 +168,8 @@ function get_reviews()
             <h2>CASE STUDIES</h2>
             <div class="line mt-3"></div>
         </div>
-        <div class="container-flex">
-            <div class="row gx-3 mt-5">
+        <div class="container-xxl">
+            <div class="row gx-3 gy-3 mt-5 justify-content-center">
                 <?= get_featured_posts(); ?>
             </div>
         </div>
