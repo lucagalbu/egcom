@@ -15,7 +15,7 @@
 <footer id="footer" class="outer-padding">
 	<div class="flex-container">
 		<div class="row">
-			<div class="col-6">
+			<div class="col-12 col-sm-6">
 				<p>
 					<small>
 						Elena Galbusera
@@ -35,8 +35,8 @@
 				</a>
 				</p>
 			</div>
-			<div class="col-6">
-				<p class="text-end">
+			<div class="col-12 col-sm-6">
+				<p class="text-sm-end">
 					<small>
 						© 2023 EGcom di Elena Galbusera. Tutti i diritti riservati.
 						<br>P.I. 02836540134
