@@ -31,7 +31,7 @@ $reviews_items = getReviewPosts();
         <h1>Dicono di me</h1>
     </div>
 
-    <div class="outer-padding container">
+    <div class="outer-padding container-xxl">
         <?php
         while ($reviews_items->have_posts()) {
             $reviews_items->the_post();
@@ -40,7 +40,7 @@ $reviews_items = getReviewPosts();
                 <div class="col-2 d-flex justify-content-center align-items-start">
                     <?= get_the_post_thumbnail($post, "thumbnail", array('class' => 'author-pic')); ?>
                 </div>
-                <div class="col-6">
+                <div class="col-10 col-xl-6">
                     <p class="m-0 title"><strong><?= get_the_title($post); ?></strong></p>
                     <p class="m-0 excerpt"><small><small><?= get_the_excerpt($post); ?></small></small></p>
                     <div class="line"></div>
