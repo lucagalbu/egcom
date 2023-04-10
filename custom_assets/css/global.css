@@ -14,10 +14,11 @@
 
 .title-strip {
   background-color: var(--secondary-color-darker);
-  height: 175px;
+  min-height: 8rem;
   display: flex;
   align-items: start;
   justify-content: center;
+  text-align: center;
 }
 
 .chevron {
