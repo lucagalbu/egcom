@@ -58,6 +58,18 @@
     Fonts
     ==========================================================================
 */
+@media (max-width: 900px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 900px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
 html {
   font-size: 20px;
 }
