@@ -41,7 +41,7 @@
 */
 
 #home-page > #home-services div.description {
-  width: 710px;
+  max-width: 60ch;
 }
 
 /* 
