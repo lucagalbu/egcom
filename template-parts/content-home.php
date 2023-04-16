@@ -59,7 +59,7 @@ function get_reviews()
     ));
 
 ?>
-    <div class="container-flex">
+    <div class="large-reviews container-flex">
         <div class="row mt-5 gx-4">
             <?php
             foreach ($posts as $post) { ?>
@@ -83,6 +83,24 @@ function get_reviews()
                 </div>
             <?php } ?>
         </div>
+    </div>
+
+
+    <div class="small-reviews container-flex">
+        <?php
+        foreach ($posts as $post) { ?>
+            <div class="row py-3 justify-content-center gx-1 my-4">
+                <div class="col-2 d-flex justify-content-center align-items-start">
+                    <?= get_the_post_thumbnail($post, "thumbnail", array('class' => 'author-pic')); ?>
+                </div>
+                <div class="col-10 col-xl-6">
+                    <p class="m-0 title"><strong><?= get_the_title($post); ?></strong></p>
+                    <p class="m-0 excerpt"><small><small><?= get_the_excerpt($post); ?></small></small></p>
+                    <div class="line"></div>
+                    <div class="review-text mt-2"><?= get_the_content(null, false, $post); ?></div>
+                </div>
+            </div>
+        <?php } ?>
     </div>
 <?php } ?>
 

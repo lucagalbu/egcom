@@ -72,3 +72,15 @@
   flex-grow: 0;
   flex-shrink: 0;
 }
+
+@media (max-width: 1050px) {
+  #home-page > #home-reviews .large-reviews {
+    display: none;
+  }
+}
+
+@media (min-width: 1050px) {
+  #home-page > #home-reviews .small-reviews {
+    display: none;
+  }
+}
