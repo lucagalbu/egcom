@@ -1,4 +1,14 @@
 /* 
+  General
+	==========================================================================
+*/
+
+#home-page .title > .line {
+  width: 4rem;
+  border-width: 3px;
+}
+
+/* 
   Hero section
 	==========================================================================
 */
@@ -53,20 +63,10 @@
   background-color: var(--secondary-color);
 }
 
-#home-page > #home-cases > .title > .line {
-  width: 80.5px;
-  border-width: 3px;
-}
-
 /* 
   Reviews section
 	==========================================================================
 */
-
-#home-page > #home-reviews > .title > .line {
-  width: 80.5px;
-  border-width: 3px;
-}
 
 #home-page > #home-reviews .author-image {
   flex-grow: 0;
