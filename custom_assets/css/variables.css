@@ -3,4 +3,5 @@
   --primary-color: #2b6692;
   --secondary-color: #faf6f6;
   --secondary-color-darker: #ebe4df;
+  --max-characters: 50ch;
 }
