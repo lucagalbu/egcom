@@ -136,15 +136,13 @@ function get_reviews()
 
     <!-- Services -->
     <div id="home-services" class="outer-padding">
-        <div class="d-flex align-items-center flex-column">
-            <div class="section-title text-center mt-5">
-                <h3>
-                    Vedo gente, faccio cose...
-                    <br>scrivo e osservo
-                </h3>
-                <div class="line mt-4"></div>
-            </div>
+        <?php echo do_shortcode(
+            "[title_section]
+                Vedo gente, faccio cose... scrivo e osservo
+            [/title_section]"
+        ); ?>
 
+        <div class="d-flex align-items-center flex-column">
             <div class="description mt-5">
                 <p class="text-center">
                     Sono Elena Galbusera e da 20 anni affianco aziende e professionisti

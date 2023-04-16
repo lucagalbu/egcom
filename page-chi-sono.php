@@ -9,14 +9,12 @@ get_header();
         <h1>Elena Galbusera</h1>
     </div>
 
-    <div class="outer-padding d-flex justify-content-center mt-4">
-        <div class="section-title col-10 col-sm-6 col-md-4">
-            <h3 class="text-center">
-                <?= get_the_title() ?>
-            </h3>
-            <div class="line mt-4"></div>
-        </div>
-    </div>
+    <?php
+    $title = get_the_title();
+    echo do_shortcode(
+        "[title_section]" . $title . "[/title_section]"
+    );
+    ?>
 
     <div class="outer-padding container-flex">
         <div class="row d-sm-none justify-content-center">
