@@ -81,8 +81,8 @@ get_header();
         <?php echo do_shortcode(
             "[title_section]
                 Negli anni ho creato una rete di professionisti che mi
-                affiancano nella mia attività in modo da poter offrire al cliente
-                una consulenza di comunicazione a 360°
+                affiancano nella mia attività per offrire al cliente
+                una consulenza a 360°
             [/title_section]"
         ); ?>
 
