@@ -78,15 +78,13 @@ get_header();
     </div>
 
     <div class="outer-padding d-flex justify-content-center mt-4">
-        <div class="section-title col-10">
-            <h3 class="text-center">
+        <?php echo do_shortcode(
+            "[title_section]
                 Negli anni ho creato una rete di professionisti che mi
                 affiancano nella mia attività in modo da poter offrire al cliente
                 una consulenza di comunicazione a 360°
-            </h3>
-            <div class="line mt-4"></div>
-        </div>
-    </div>
+            [/title_section]"
+        ); ?>
 
     <div class="outer-padding container-flex">
         <div class="row mt-3 gy-4 gx-5">

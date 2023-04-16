@@ -284,3 +284,21 @@ function set_image_sizes()
 	add_image_size('services-icon', 70, 0, false);
 }
 add_action('after_setup_theme', 'set_image_sizes');
+
+
+/** 
+ * Shorcodes 
+ */
+
+add_shortcode('title_section', 'title_section_handler');
+function title_section_handler($atts, $content, $tag)
+{
+?>
+	<div class="d-flex justify-content-center mt-4">
+		<div class="section-title">
+			<h3 class="text-center"> <?= $content ?> </h3>
+			<div class="line mt-4"></div>
+		</div>
+	</div>
+<?php
+}
