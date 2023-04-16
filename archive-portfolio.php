@@ -37,7 +37,7 @@ $portfolio_items = getPortfolioPosts();
             while ($portfolio_items->have_posts()) {
                 $portfolio_items->the_post();
             ?>
-                <div class="col-4 mb-3 mt-3 d-flex justify-content-center">
+                <div class="col-xl-4 col-sm-6 col-12 mb-3 mt-3 d-flex justify-content-center">
                     <a class="project-container position-relative" href='<?= get_permalink() ?>'>
                         <?= get_the_post_thumbnail(null, "post-title"); ?>
                         <div class="d-flex justify-content-center align-items-center text-center post-title">
