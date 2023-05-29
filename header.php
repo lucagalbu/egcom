@@ -30,8 +30,14 @@
 	<?php wp_body_open(); ?>
 	<header id="masthead" class="d-flex justify-content-between align-items-center">
 		<?php the_custom_logo(); ?>
-
 		<nav id="site-navigation" class=" main-navigation">
+			<!-- burger menu visible only on small screens (see style.css) -->
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				<div class="burger-bar"></div>
+				<div class="burger-bar"></div>
+				<div class="burger-bar"></div>
+			</button>
+
 			<?php
 			wp_nav_menu(array('theme_location' => 'header-menu', 'fallback_cb' => false, 'container' => ''));
 			?>

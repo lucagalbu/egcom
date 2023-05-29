@@ -683,6 +683,24 @@ textarea {
   display: block;
 }
 
+.menu-toggle {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  float: right;
+}
+
+.menu-toggle > .burger-bar {
+  background-color: black;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
     display: none;
