@@ -282,6 +282,7 @@ function set_image_sizes()
 	add_image_size('post-title', 751, 480, true);
 	add_image_size('review-thumbnail', 100, 100, true);
 	add_image_size('services-icon', 70, 0, false);
+	add_image_size('client-logo', 200, 0, false);
 }
 add_action('after_setup_theme', 'set_image_sizes');
 
