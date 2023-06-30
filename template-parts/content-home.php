@@ -46,7 +46,7 @@ function get_featured_posts()
                 </div>
             </a>
         </div>
-<? }
+<?php }
 }
 ?>
 
