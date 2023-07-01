@@ -48,7 +48,7 @@ function get_tile($icon_slug, $title, $description, $services, $colored)
     <div class="px-3 <?= $classes ?>">
         <div class="row pt-2">
             <div class="col-3">
-                <?= get_icon_image("<?=$icon_slug?>") ?>
+                <?= get_icon_image($icon_slug) ?>
             </div>
             <div class="col-9">
                 <p><strong><?= $title ?></strong></p>
