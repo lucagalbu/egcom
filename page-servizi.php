@@ -137,31 +137,10 @@ get_header();
 
                 <div class="col-12 col-sm-6 col-xl-4">
                     <?= get_tile(
-                        "book-open-alt-svgrepo-com",
-                        "Editoria Print Design",
-                        "Lookbooks, cataloghi, brochures, libri, flyers, riviste aziendali e 
-                    presentazioni sono strumenti estremamente efficaci per rafforzare l'identità del brand.",
-                        "Studio grafico / Produzione di contenuti testuali / realizzazione.",
-                        false
-                    ) ?>
-                </div>
-
-                <div class="col-12 col-sm-6 col-xl-4">
-                    <?= get_tile(
                         "calendar-days-svgrepo-com",
                         "Eventi",
                         "Eventi aziendali, lanci di prodotto, press day, manifestazioni di interesse comune.",
                         "Ricerca location / allestimenti / ricerca catering /coordinamento / servizi tecnici.",
-                        true
-                    ) ?>
-                </div>
-
-                <div class="col-12 col-sm-6 col-xl-4">
-                    <?= get_tile(
-                        "design-pencil-svgrepo-com",
-                        "Brand Design",
-                        "Un'immagine visiva coordinata serve per definire e consolidare l'identità del brand.",
-                        "Progettazione Brand Image + Logo Design / studio della tipografia / studio del colore.",
                         false
                     ) ?>
                 </div>
