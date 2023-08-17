@@ -90,7 +90,7 @@ get_header();
             <div class="row mt-3 gy-4 gx-5">
                 <div class="col-12 col-sm-6 col-xl-4">
                     <?= get_tile(
-                        "document-pen-sign-svgrepo-com",
+                        "newspaper-5-svgrepo-com",
                         "Ufficio Stampa & Media Relations",
                         "Ogni canale ha la sua forma di comunicazione. Che sia la carta stampata, il web,
                     la radio o la Tv è necessario sviluppare un'attività di ufficio stampa ad hoc senza
@@ -103,7 +103,7 @@ get_header();
 
                 <div class="col-12 col-sm-6 col-xl-4">
                     <?= get_tile(
-                        "document-pen-sign-svgrepo-com",
+                        "bulb-light-svgrepo-com",
                         "Strategie di Comunicazione",
                         "Un'ottima strategia di comunicazione è la base di qualsiasi attività che andremo a
                     sviluppare insieme.",
@@ -125,7 +125,7 @@ get_header();
 
                 <div class="col-12 col-sm-6 col-xl-4">
                     <?= get_tile(
-                        "document-pen-sign-svgrepo-com",
+                        "hashtag-square-svgrepo-com",
                         "Sociale Media Marketing",
                         "I social network sono un canale di comunicazione fondamentale per poter sviluppare una
                     strategia efficace. Sono un'importante opportunità di crescita e visibilità per aziende
@@ -137,7 +137,7 @@ get_header();
 
                 <div class="col-12 col-sm-6 col-xl-4">
                     <?= get_tile(
-                        "document-pen-sign-svgrepo-com",
+                        "book-open-alt-svgrepo-com",
                         "Editoria Print Design",
                         "Lookbooks, cataloghi, brochures, libri, flyers, riviste aziendali e 
                     presentazioni sono strumenti estremamente efficaci per rafforzare l'identità del brand.",
@@ -148,7 +148,7 @@ get_header();
 
                 <div class="col-12 col-sm-6 col-xl-4">
                     <?= get_tile(
-                        "document-pen-sign-svgrepo-com",
+                        "calendar-days-svgrepo-com",
                         "Eventi",
                         "Eventi aziendali, lanci di prodotto, press day, manifestazioni di interesse comune.",
                         "Ricerca location / allestimenti / ricerca catering /coordinamento / servizi tecnici.",
@@ -158,7 +158,7 @@ get_header();
 
                 <div class="col-12 col-sm-6 col-xl-4">
                     <?= get_tile(
-                        "document-pen-sign-svgrepo-com",
+                        "design-pencil-svgrepo-com",
                         "Brand Design",
                         "Un'immagine visiva coordinata serve per definire e consolidare l'identità del brand.",
                         "Progettazione Brand Image + Logo Design / studio della tipografia / studio del colore.",
@@ -168,7 +168,7 @@ get_header();
 
                 <div class="col-12 col-sm-6 col-xl-4">
                     <?= get_tile(
-                        "document-pen-sign-svgrepo-com",
+                        "monitor-code-svgrepo-com",
                         "Realizzazione siti web",
                         "Il web è la vetrina sul mondo aperta 365 giorni l'anno.
                     È quindi necessario non solo esserci ma esserci nel modo giusto.",
