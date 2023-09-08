@@ -70,6 +70,7 @@
 #burgerContainer > #burgerContent {
   display: none;
   position: fixed;
+  z-index: 1;
   top: var(--header-height);
   right: 0;
   left: 0;
