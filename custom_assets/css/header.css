@@ -30,7 +30,6 @@
 #burgerContainer {
   display: flex;
   flex-direction: column;
-  align-items: end;
   justify-content: space-between;
   height: 20px;
   cursor: pointer;

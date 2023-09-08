@@ -37,22 +37,24 @@
 			wp_nav_menu(array('theme_location' => 'header-menu', 'fallback_cb' => false, 'container' => ''));
 			?>
 			<!-- burger menu to display on small screens -->
-			<div id="burgerContainer" onclick="burgerMenuClick()">
-				<!-- burger horizontal lines -->
-				<div class="burger-line line-one"></div>
-				<div class="burger-line line-two"></div>
-				<div class="burger-line line-three"></div>
-				<!-- menu triggered by burger -->
-				<div id="burgerContent">
-					<?php
-					$menu_items = wp_get_nav_menu_items('main menu');
-					foreach ($menu_items as $menu_item) {
-						$href = $menu_item -> url;
-						$title = $menu_item -> title;
-						?>
-						<a href=<?= $href ?>><?= $title ?></a>
+			<div class="d-flex justify-content-end">
+				<div id="burgerContainer" onclick="burgerMenuClick()">
+					<!-- burger horizontal lines -->
+					<div class="burger-line line-one"></div>
+					<div class="burger-line line-two"></div>
+					<div class="burger-line line-three"></div>
+					<!-- menu triggered by burger -->
+					<div id="burgerContent">
 						<?php
-					} ?>
+						$menu_items = wp_get_nav_menu_items('main menu');
+						foreach ($menu_items as $menu_item) {
+							$href = $menu_item -> url;
+							$title = $menu_item -> title;
+							?>
+							<a href=<?= $href ?>><?= $title ?></a>
+							<?php
+						} ?>
+					</div>
 				</div>
 			</div>
 		</nav><!-- #site-navigation -->
