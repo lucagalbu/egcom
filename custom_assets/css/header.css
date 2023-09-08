@@ -25,3 +25,87 @@
 #masthead nav a:visited {
   color: var(--primary-color);
 }
+
+/* burger button */
+#burgerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  height: 20px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 37.49em) {
+  #site-navigation > #burgerContainer {
+    display: none;
+  }
+}
+
+#burgerContainer > .burger-line {
+  border-style: solid;
+  border-width: 1px;
+  height: 1px;
+  width: 20px;
+  transform-origin: right;
+  position: relative;
+}
+
+#burgerContainer.animation > .burger-line.line-one{
+  animation: 0.1s burger-lines-rotation-one;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+#burgerContainer.animation > .burger-line.line-two{
+  display: none;
+}
+
+#burgerContainer.animation > .burger-line.line-three{
+  animation: 0.1s burger-lines-rotation-two;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+#burgerContainer > #burgerContent {
+  display: none;
+  position: fixed;
+  top: var(--header-height);
+  right: 0;
+  left: 0;
+  height: 100vh;
+  background-color: var(--secondary-color-darker);
+}
+
+#burgerContainer > #burgerContent > a {
+  width: fit-content;
+  font-size: 1.5rem;
+}
+
+#burgerContainer > #burgerContent.show {
+  display: block;
+}
+
+@keyframes burger-lines-rotation-one {
+  from {
+    transform: rotate(0);
+    top: 0px;
+  }
+
+  to {
+    transform: rotate(-45deg);
+    top: 2px;
+  }
+}
+
+@keyframes burger-lines-rotation-two {
+  from {
+    transform: rotate(0);
+    bottom: 0;
+  }
+
+  to {
+    transform: rotate(45deg);
+    bottom: 2px;
+  }
+}

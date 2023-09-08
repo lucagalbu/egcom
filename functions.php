@@ -125,6 +125,7 @@ function add_scripts_and_styles()
 
 	wp_enqueue_script('fa-icons', 'https://kit.fontawesome.com/8dc7859c9e.js');
 	wp_enqueue_script('recensioni', get_template_directory_uri() . '/custom_assets/js/recensioni.js');
+	wp_enqueue_script('header', get_template_directory_uri() . '/custom_assets/js/header.js');
 }
 add_action('wp_enqueue_scripts', 'add_scripts_and_styles');
 
