@@ -35,8 +35,13 @@
   cursor: pointer;
 }
 
+#site-navigation > #smallScreenMenu {
+  display: flex;
+  justify-content: end;
+}
+
 @media screen and (min-width: 37.49em) {
-  #site-navigation > #burgerContainer {
+  #site-navigation > #smallScreenMenu {
     display: none;
   }
 }

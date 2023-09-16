@@ -37,7 +37,7 @@
 			wp_nav_menu(array('theme_location' => 'header-menu', 'fallback_cb' => false, 'container' => ''));
 			?>
 			<!-- burger menu to display on small screens -->
-			<div class="d-flex justify-content-end">
+			<div id=smallScreenMenu>
 				<div id="burgerContainer" onclick="burgerMenuClick()">
 					<!-- burger horizontal lines -->
 					<div class="burger-line line-one"></div>
