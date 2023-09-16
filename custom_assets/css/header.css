@@ -74,6 +74,7 @@
 #burgerContainer > #burgerContent {
   display: none;
   position: fixed;
+  touch-action: none;
   z-index: 1;
   top: var(--header-height);
   width: 100vw;
