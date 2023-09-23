@@ -8,14 +8,6 @@ get_header();
         <h1>Clienti</h1>
     </div>
 
-    <div class="container-xl">
-        <?php echo do_shortcode(
-            "[title_section]
-            Ecco con chi ho avuto la fortuna di collaborare.
-            [/title_section]"
-        ); ?>
-    </div>
-
     <div class="outer-padding container-flex">
         <?php the_content(); ?>
     </div>
