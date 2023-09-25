@@ -76,16 +76,6 @@ get_header();
     <div class="outer-padding title-strip">
         <h1>Servizi</h1>
     </div>
-
-    <div class="container-xl">
-        <?php echo do_shortcode(
-            "[title_section]
-                Negli anni ho creato una rete di professionisti che mi
-                affiancano nella mia attività per offrire al cliente
-                una consulenza a 360°
-            [/title_section]"
-        ); ?>
-
         <div class="outer-padding container-flex">
             <div class="row mt-3 gy-4 gx-5">
                 <div class="col-12 col-sm-6 col-xl-4">
@@ -158,7 +148,6 @@ get_header();
                 </div>
             </div>
         </div>
-    </div>
 </div>
 
 <?php
