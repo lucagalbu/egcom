@@ -122,7 +122,7 @@ function get_reviews()
                     </h3>
                     <div class="d-sm-none d-inline image-small">
                         <!-- Image between the text -->
-                        <?= get_hero_image("elena-galbusera-recaled") ?>
+                        <?= get_hero_image("elena-galbusera-home") ?>
                     </div>
                     <div class="catch d-flex align-items-center">
                         <div class="line"></div>
@@ -132,7 +132,7 @@ function get_reviews()
                 <div class="col-3 d-none d-sm-flex justify-content-end">
                     <div class="d-sm-inline d-none image-large">
                         <!-- Image on the right -->
-                        <?= get_hero_image("tom-johnson-recaled") ?>
+                        <?= get_hero_image("tom-johnson-home") ?>
                     </div>
                 </div>
             </div>
