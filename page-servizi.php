@@ -125,7 +125,7 @@ get_header();
                 </div>
 
                 <div id = contatti class="col-12 col-lg-4 align-items-center justify-content-center">
-                    <a class="btn btn-primary me-4" href="/contatti">
+                    <a class="btn btn-primary" href="/contatti">
                         Contattami
                     </a>
                 </div>
