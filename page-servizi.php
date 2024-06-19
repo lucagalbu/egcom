@@ -78,7 +78,7 @@ get_header();
     </div>
         <div class="outer-padding container-flex">
             <div class="row mt-3 gy-4 gx-5">
-                <div class="col-12 col-sm-6 col-xl-4">
+                <div class="col-12 col-lg-4">
                     <?= get_tile(
                         "newspaper-5-svgrepo-com",
                         "Ufficio Stampa & Media Relations",
@@ -91,7 +91,7 @@ get_header();
                     ) ?>
                 </div>
 
-                <div class="col-12 col-sm-6 col-xl-4">
+                <div class="col-12 col-lg-4">
                     <?= get_tile(
                         "bulb-light-svgrepo-com",
                         "Strategie di Comunicazione",
@@ -103,7 +103,7 @@ get_header();
                     ) ?>
                 </div>
 
-                <div class="col-12 col-sm-6 col-xl-4">
+                <div class="col-12 col-lg-4">
                     <?= get_tile(
                         "document-pen-sign-svgrepo-com",
                         "Contenuti",
@@ -114,7 +114,7 @@ get_header();
                     ) ?>
                 </div>
 
-                <div class="col-12 col-sm-6 col-xl-4">
+                <div class="col-12 col-lg-4">
                     <?= get_tile(
                         "success-svgrepo-com",
                         "Personal Branding e Branding aziendale",
@@ -124,13 +124,13 @@ get_header();
                     ) ?>
                 </div>
 
-                <div class="col-12 col-sm-6 col-xl-4 d-flex align-items-center justify-content-center">
+                <div id = contatti class="col-12 col-lg-4 align-items-center justify-content-center">
                     <a class="btn btn-primary me-4" href="/contatti">
                         Contattami
                     </a>
                 </div>
 
-                <div class="col-12 col-sm-6 col-xl-4">
+                <div class="col-12 col-lg-4">
                 <?= get_tile(
                         "calendar-days-svgrepo-com",
                         "Eventi",
