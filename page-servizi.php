@@ -107,7 +107,8 @@ get_header();
                     <?= get_tile(
                         "document-pen-sign-svgrepo-com",
                         "Contenuti",
-                        "Ogni storia può essere raccontata ma è il modo con cui lo si fa a fare la differenza.",
+                        "Ogni storia può essere raccontata ma è il modo con cui lo si fa a fare la
+                    differenza.",
                         "Produzione di contenuti testuali e visivi per siti, blog, editoria, canali social.",
                         false
                     ) ?>
@@ -115,34 +116,26 @@ get_header();
 
                 <div class="col-12 col-sm-6 col-xl-4">
                     <?= get_tile(
-                        "hashtag-square-svgrepo-com",
-                        "Sociale Media Marketing",
-                        "I social network sono un canale di comunicazione fondamentale per poter sviluppare una
-                    strategia efficace. Sono un'importante opportunità di crescita e visibilità per aziende
-                    e professionisti.",
-                        "Apertura profili / gestione / produzione contenuti testuali e grafici / campagne ADV.",
+                        "success-svgrepo-com",
+                        "Personal Branding e Branding aziendale",
+                        "Una buona strategia di branding permette ad aziende e professionisti di distinguersi tra i competitors attivi sul mercato.",
+                        "Studio e sviluppo di strategie atte a rafforzare e diffondere l'immagine e la reputazione professionale e aziendale.",
                         true
                     ) ?>
                 </div>
 
+                <div class="col-12 col-sm-6 col-xl-4 d-flex align-items-center justify-content-center">
+                    <a class="btn btn-primary me-4" href="/contatti">
+                        Contattami
+                    </a>
+                </div>
+
                 <div class="col-12 col-sm-6 col-xl-4">
-                    <?= get_tile(
+                <?= get_tile(
                         "calendar-days-svgrepo-com",
                         "Eventi",
                         "Eventi aziendali, lanci di prodotto, press day, manifestazioni di interesse comune.",
                         "Ricerca location / allestimenti / ricerca catering /coordinamento / servizi tecnici.",
-                        false
-                    ) ?>
-                </div>
-
-                <div class="col-12 col-sm-6 col-xl-4">
-                    <?= get_tile(
-                        "monitor-code-svgrepo-com",
-                        "Realizzazione siti web",
-                        "Il web è la vetrina sul mondo aperta 365 giorni l'anno.
-                    È quindi necessario non solo esserci ma esserci nel modo giusto.",
-                        "Progettazione e realizzazione di siti web su piattaforma  WordPress / servizio newsletter /
-                    landing pages / e-commerce.",
                         true
                     ) ?>
                 </div>
