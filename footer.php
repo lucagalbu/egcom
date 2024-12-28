@@ -30,7 +30,7 @@
 				<a class="text-decoration-none" href="https://www.linkedin.com/">
 					<i class="me-2 fa-brands fa-linkedin"></i>
 				</a>
-				<a>
+				<a class="text-decoration-none" href="https://www.instagram.com/">
 					<i class="me-2 fa-brands fa-square-instagram"></i>
 				</a>
 				</p>
