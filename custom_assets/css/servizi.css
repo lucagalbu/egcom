@@ -5,3 +5,15 @@
 #servizi .tail-container.colored-background {
   background-color: var(--secondary-color);
 }
+
+@media screen and (max-width: 768px) {
+  #servizi #contatti {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #servizi #contatti {
+    display: flex;
+  }
+}
