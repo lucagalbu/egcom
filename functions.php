@@ -122,6 +122,7 @@ function add_scripts_and_styles()
 	wp_enqueue_style('footer', get_template_directory_uri() . '/custom_assets/css/footer.css');
 	wp_enqueue_style('servizi', get_template_directory_uri() . '/custom_assets/css/servizi.css');
 	wp_enqueue_style('contatti', get_template_directory_uri() . '/custom_assets/css/contatti.css');
+	wp_enqueue_style('blog', get_template_directory_uri() . '/custom_assets/css/blog.css');
 
 	wp_enqueue_script('fa-icons', 'https://kit.fontawesome.com/8dc7859c9e.js');
 	wp_enqueue_script('recensioni', get_template_directory_uri() . '/custom_assets/js/recensioni.js');
@@ -272,6 +273,28 @@ function create_reviewtype()
 	);
 }
 add_action('init', 'create_reviewtype');
+
+/**
+ * Register the blog post type
+ */
+function create_blogtype()
+{
+	register_post_type(
+		'blog',
+		array(
+			'labels' => array(
+				'name' => __('Blogs'),
+				'singular_name' => __('Blog')
+			),
+			'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'blog'),
+			'show_in_rest' => true
+		)
+	);
+}
+add_action('init', 'create_blogtype');
 
 
 /** 
