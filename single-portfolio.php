@@ -3,7 +3,7 @@
 <div id="single-portfolio">
     <div class="d-flex header px-2">
         <div class="half-width title">
-            <?= strtoupper(get_the_title()) ?>
+            <?= mb_strtoupper(get_the_title()) ?>
             <div class="line"></div>
         </div>
         <div class="half-width">
